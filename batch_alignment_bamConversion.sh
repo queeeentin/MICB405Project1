@@ -21,5 +21,5 @@ sambambaOutput=$output.bam
 #Align reads to reference
 bwa mem $ref_fasta $indir/$R1 $indir/$R2 > $outdir/$bwaOutput
 
-#Convert bam to sam
+#Convert sam to bam
 sambamba view -S --format=bam -o $sambambaOutput $outdir/$bwaOutput
